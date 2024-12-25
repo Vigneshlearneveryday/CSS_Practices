@@ -1,0 +1,9 @@
+h1,
+h2 {
+  color: rgb(2, 85, 28);
+}
+
+[data-priority="high"] {
+  color: red;
+  background-color: yellow;
+}

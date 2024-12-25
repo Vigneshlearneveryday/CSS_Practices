@@ -15,6 +15,6 @@ Welcome to the **CSS Practice Repository**, where creativity meets functionality
 
 ---
 
-###🙏 Special Thanks
+### 🙏 Special Thanks
 - **A huge thank you to Masynctech Coding School** for their excellent guidance and support in my coding journey. Their teaching and mentorship have been invaluable.
 ---

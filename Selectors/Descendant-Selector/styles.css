@@ -1,0 +1,10 @@
+.container p{
+    color: red;
+}
+.container .special{
+    background-color: rgb(40, 10, 234);
+    color: white;
+}
+.container > h2{
+    color: rgba(9, 136, 83, 0.994);
+}

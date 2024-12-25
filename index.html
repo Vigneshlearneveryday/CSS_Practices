@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Practice</title>
+    <style>
+        /* Group selector to style <h1> and <p> */
+        h1, p {
+            color: #2c3e50; /* Dark blue text */
+            font-family: Arial, sans-serif; /* Set font family */
+            margin-bottom: 20px; /* Add bottom margin */
+        }
+
+        /* Type-attribute selector for <input type="text"> */
+        input[type="text"] {
+            background-color: #f0f8ff; /* Light blue background */
+            border: 1px solid #3498db; /* Blue border */
+        }
+
+        /* Type-attribute selector for <input type="submit"> */
+        input[type="submit"] {
+            background-color: #2ecc71; /* Green background */
+            color: white; /* White text color */
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading Example</h1>
+    <p>This is a paragraph example.</p>
+
+    <form>
+        <input type="text" placeholder="Enter text">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

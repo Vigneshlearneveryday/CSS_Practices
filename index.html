@@ -3,35 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Practice</title>
+    <title>Styling with Selectors</title>
     <style>
-        /* Group selector to style <h1> and <p> */
-        h1, p {
-            color: #2c3e50; /* Dark blue text */
-            font-family: Arial, sans-serif; /* Set font family */
-            margin-bottom: 20px; /* Add bottom margin */
+        /* ID Selector: Style a specific element using its ID */
+        #main-title {
+            font-size: 32px;
+            color: #2c3e50; /* Dark blue */
+            text-align: center;
+            margin-bottom: 20px;
         }
 
-        /* Type-attribute selector for <input type="text"> */
+        /* Class Selector: Apply styles to paragraph elements with the same class */
+        .info {
+            font-size: 18px;
+            color: #34495e; /* Grayish blue */
+            line-height: 1.6;
+        }
+
+        /* Attribute Selector: Style input fields based on their type */
         input[type="text"] {
-            background-color: #f0f8ff; /* Light blue background */
+            background-color: #f0f8ff; /* Light blue */
             border: 1px solid #3498db; /* Blue border */
+            padding: 8px;
+            margin-bottom: 10px;
+            width: 100%;
+            box-sizing: border-box;
         }
 
-        /* Type-attribute selector for <input type="submit"> */
         input[type="submit"] {
-            background-color: #2ecc71; /* Green background */
-            color: white; /* White text color */
+            background-color: #2ecc71; /* Green */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #27ae60; /* Darker green on hover */
+        }
+
+        /* Descendant Selector: Style list items inside an unordered list */
+        ul li {
+            font-size: 16px;
+            color: #7f8c8d; /* Light gray */
+            margin-bottom: 8px;
+            list-style-type: disc; /* Default bullet style */
         }
     </style>
 </head>
 <body>
-    <h1>Heading Example</h1>
-    <p>This is a paragraph example.</p>
+    <h1 id="main-title">Styling with CSS Selectors</h1>
+
+    <p class="info">This is a paragraph styled with a class selector.</p>
+    <p class="info">Another paragraph styled with the same class.</p>
 
     <form>
-        <input type="text" placeholder="Enter text">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        
         <input type="submit" value="Submit">
     </form>
+
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ul>
 </body>
 </html>
+
